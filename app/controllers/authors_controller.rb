@@ -7,7 +7,7 @@ class AuthorsController < ApplicationController
   end
 
   def create
-    
+
     @author = Author.new(author_params)
 if @post.valid?
   @post.save
