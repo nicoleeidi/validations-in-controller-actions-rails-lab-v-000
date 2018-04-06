@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   def edit
   end
 
-  def update
+  def update #error says it should have gone to post_path and it went to the edit form.
   #  @post= Post.find(params[:id])
     if @post.valid?
     @post.update(post_params)
